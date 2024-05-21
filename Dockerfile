@@ -4,5 +4,4 @@ COPY docker-entrypoint.sh /opt/keycloak/tools
 
 WORKDIR /opt/keycloak
 
-# Configure Keycloak to use PostgreSQL
-RUN /opt/keycloak/bin/kc.sh config --db=postgres
+
