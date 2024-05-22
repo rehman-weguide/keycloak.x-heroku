@@ -81,4 +81,4 @@ while [[ "$#" -gt 0 ]]; do
   shift
 done
 
-exec /opt/keycloak/bin/kc.sh $SERVER_OPTS $CONFIG_ARGS
+exec /opt/keycloak/bin/kc.sh start $SERVER_OPTS $CONFIG_ARGS
