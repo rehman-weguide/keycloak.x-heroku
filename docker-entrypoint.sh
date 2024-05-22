@@ -103,9 +103,9 @@ if [[ "$RUN_CONFIG_START" == true ]]; then
     touch $CONFIG_MARKER_FILE
   fi
 
-  exec /opt/jboss/keycloak/bin/kc.sh $SERVER_OPTS
+  exec /opt/jboss/keycloak/bin/kc.sh start $SERVER_OPTS
 else
-  exec /opt/jboss/keycloak/bin/kc.sh $SERVER_OPTS $CONFIG_ARGS
+  exec /opt/jboss/keycloak/bin/kc.sh start $SERVER_OPTS $CONFIG_ARGS
 fi
 
 exit $?
