@@ -1,7 +1,7 @@
-FROM quay.io/keycloak/keycloak:24.0.4
+FROM quay.io/keycloak/keycloak-x:15.0.2
 
-COPY docker-entrypoint.sh /opt/keycloak/tools
+COPY docker-entrypoint.sh /opt/jboss/tools
 
-WORKDIR /opt/keycloak
+WORKDIR /opt/jboss/keycloak
 
-
+RUN ./bin/kc.sh config --db=postgres
